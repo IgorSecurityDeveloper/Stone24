@@ -1,0 +1,25 @@
+{
+  "short_name": "Stone 24",
+  "name": "Strong Administration",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "../stone-front/estilos/midias/Stone 24.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background-image": "C:/Users/igora/Documents/GitHub/Stone24/stone-front/estilos/midias/fundo azul.png"
+}
