@@ -1,39 +1,35 @@
 import React, { useState } from 'react';
 import './login.css';
+// import { email, password } from "./stone-back/Eventos/validarLogin.js";
 
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-/*import './stone-front/estilosC:\Users\igora\Documents\GitHub\Stone24\stone-front\estilos\midias\Stone 24.png';*/
 /* Preencher com uma página de recuperação de senha no link de recuperação de senha */
 
-const Login = () => {
+function Login() {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [show, setShow] = useState(false)
 
-  const handleClick = (e) => {
-    e.preventDefault()
+
+  function handleClick(e) {
     setShow(!show)
   }
 
   return (
 
-    <>
     <div className="temaAzul">
 
       <div className="painellogin">
 
-        <div className="painellogin"></div>
+        <div className="logotipo"/>
 
-          <div className="logotipo">
-            <img alt="Software de gestão Stone 24" src="C:\Users\igora\Documents\GitHub\Stone24\stone-front\estilos\midias\Stone 24.png" />
-          </div>
-<form>
+        <form>
           <input
             className="campologin"
             type="email"
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             method="POST"
             placeholder="Login"
             required
@@ -44,7 +40,7 @@ const Login = () => {
             className="camposenha"
             type={show ? "text" : "password"}
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             method="POST"
             placeholder="Senha"
             required
@@ -71,12 +67,12 @@ const Login = () => {
           <a className="recuperarSenha" link href="http://">Esqueceu a senha</a>
 
           <button className="EnviarLogin" method="POST" type="submit">Confirmar</button>
-          </form>
+        </form>
       </div>
 
     </div>
 
-    </>
+
 
   );
 }
