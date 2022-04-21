@@ -150,3 +150,81 @@ input:focus:-ms-input-placeholder {
   box-shadow: 3px 5px 5px rgb(0, 0, 0);
   border-radius: 40px;
 }
+
+@media (max-width: 360px) {
+
+  .temaAzul {
+    background-image: url('C:\Users\igora\Documents\GitHub\Stone24\stone-front\application\public\midias\fundo azul.png');
+    background-size: cover;
+    justify-content: center;
+    position: absolute;
+    filter: blur(4);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1200px;
+    z-index: -1;
+  }
+
+  .painellogin {
+    top: -3%;
+    left: -19%;
+    width: 90px;
+    height: 300px;
+  }
+
+  .logotipo {
+    margin-bottom: 300px;
+    margin-left: 0px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+  }
+
+  .campologin {
+    margin-left: 0px;
+    padding-top: 40px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /********************************************************************/
+  .camposenha {
+    padding-top: 60px;
+    margin-left: 0px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .icone-olho {
+    margin-left: 170px;
+    margin-top: -40px;
+  }
+
+  .line1 {
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  .line2 {
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  .recuperarSenha {
+    margin-left: 35px;
+  }
+
+  .recuperarSenha:hover {
+    color: #58c5ff;
+  }
+
+  .EnviarLogin {
+    margin-left: 30px;
+    margin-top: 80px;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+  }
+
+}

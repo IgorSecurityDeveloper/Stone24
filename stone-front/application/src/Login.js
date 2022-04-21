@@ -11,6 +11,19 @@ function Login() {
   const [password, setPassword] = useState("")
   const [show, setShow] = useState(false)
 
+  function Credenciais(email, password) {
+   var senha = document.querySelector(password)
+   var usuario = document.querySelector(email)
+
+    if (senha === "123456" && usuario === "igor@stone.com.br") {
+      window.alert("Teste: Essa senha está certa!")
+    }
+    else {
+      window.alert("Teste: Email ou senha incorretos!")
+    }
+  }
+
+//  Credenciais() 
 
   function handleClick(e) {
     setShow(!show)
@@ -22,12 +35,13 @@ function Login() {
 
       <div className="painellogin">
 
-        <div className="logotipo"/>
+        <div className="logotipo" />
 
         <form>
           <input
             className="campologin"
             type="email"
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             method="POST"
@@ -39,6 +53,7 @@ function Login() {
           <input
             className="camposenha"
             type={show ? "text" : "password"}
+            id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             method="POST"
@@ -66,7 +81,7 @@ function Login() {
 
           <a className="recuperarSenha" link href="http://">Esqueceu a senha</a>
 
-          <button className="EnviarLogin" method="POST" type="submit">Confirmar</button>
+          <button className="EnviarLogin" method="POST" type="submit" onSubmit={Credenciais()}>Confirmar</button>
         </form>
       </div>
 
