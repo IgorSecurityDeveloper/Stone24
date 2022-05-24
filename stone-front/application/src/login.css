@@ -1,5 +1,5 @@
 .temaAzul {
-  background-image: url('C:\Users\igora\Documents\GitHub\Stone24\stone-front\application\public\midias\fundo azul.png');
+  background-image: linear-gradient(to right, #00173F, #0161A4, #0189DF, #0097E8, #0260AF, #011D56);
   background-size: cover;
   justify-content: center;
   position: absolute;
@@ -14,7 +14,8 @@
 .painellogin {
   padding: 100px;
   margin: 100px;
-  left: 26%;
+  top: 10%;
+  left: 30%;
   align-items: center;
   display: flex;
   position: relative;
