@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-// import Credenciais from "./stone-back/ValidarLogin";
+import Credenciais from "./paginas/Elementos/ValidarLogin";
 import './login.css';
-
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 /* Preencher com uma página de recuperação de senha no link de recuperação de senha */
 
@@ -9,7 +8,7 @@ var MensagemERRO = `<div className="recuperarSenha">Login ou Senha Incorretos, p
 
 function Login() {
 
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState('false')
 
   function handleClick(e) {
     setShow(!show)
@@ -32,8 +31,9 @@ function Login() {
             placeholder="Login"
             required
           />
+          <br/>
           <hr className="line1"></hr>
-
+<br/>
           <input
             className="camposenha"
             type={show ? "text" : "password"}
@@ -42,6 +42,7 @@ function Login() {
             placeholder="Senha"
             required
           />
+          <br/>
           <hr className="line2"></hr>
 
           <div className="icone-olho">
@@ -52,21 +53,7 @@ function Login() {
 
           <a className="recuperarSenha" link href="http://">Esqueceu a senha</a>
 
-          <button className="EnviarLogin" method="POST" type="submit" onClick={
-
-//Função credenciais corrigida, verificar forma de importar ValidarLogin de maneira correta no React
-            function Credenciais() {
-              var senha = document.getElementById('password')
-              var usuario = document.getElementById('email')
-
-              if (usuario.value == "igor@stone.com.br" && senha.value == 123456) {
-                window.alert("Teste: Essas credenciais estão corretas!")
-              }
-              else {
-                window.alert("Teste: Email ou senha incorretos!")
-              }
-          }
-          }> Confirmar </button>
+          <button className="EnviarLogin" method="POST" type="submit" onClick={Credenciais}> Confirmar </button>
 
       </form>
     </div>

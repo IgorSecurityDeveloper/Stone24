@@ -10,4 +10,4 @@ function Credenciais() {
     }
 }
 
-export default Credenciais
+export default Credenciais;
