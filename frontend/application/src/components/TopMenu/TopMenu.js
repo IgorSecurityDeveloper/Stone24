@@ -1,9 +1,10 @@
 import React from 'react';
+import createIncident from '../../pages/incident/Incident';
 
 function TopMenu() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-light shadow-sm">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Stone24</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +16,7 @@ function TopMenu() {
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Incident</a>
+                <a className="nav-link" href="create-incident" onclick={createIncident}>Incident</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Request</a>

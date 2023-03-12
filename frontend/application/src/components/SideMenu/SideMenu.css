@@ -1,0 +1,12 @@
+.sideNavBarSize {
+    width: 20% !important; 
+    height: 100% !important;
+    margin-left: -250px;
+    transition: 1s;
+    position: absolute;
+}
+
+.sideNavBarSize:hover {
+    transition: 0.5s;
+    margin-left: 0px;
+}
