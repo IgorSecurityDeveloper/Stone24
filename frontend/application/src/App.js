@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import TopMenu from '../src/components/TopMenu/TopMenu'
 
 function App() {
   return (
-   <>
+    <>
+
+    <TopMenu />
+   
    </>
   );
 }
