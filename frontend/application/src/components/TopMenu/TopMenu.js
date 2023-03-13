@@ -1,7 +1,8 @@
 import React from 'react';
-import createIncident from '../../pages/incident/Incident';
+import {createIncident} from '../../App';
 
 function TopMenu() {
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light shadow-sm">
@@ -16,7 +17,7 @@ function TopMenu() {
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="create-incident" onclick={createIncident}>Incident</a>
+                <a className="nav-link" href="#" onclick={createIncident}>Incident</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Request</a>
