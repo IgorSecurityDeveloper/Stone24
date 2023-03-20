@@ -1,13 +1,24 @@
 import React from 'react';
-import {createIncident} from '../../App';
+import { useState } from 'react';
+import CreateTicket from '../../pages/CreateTicket/CreateTicket';
+import '../TopMenu/TopMenu.css';
 
 function TopMenu() {
+  
+  const [showTicket, setShowTicket] = useState(false);
+
+  function createTicket() {
+    setShowTicket(true);
+  }
+  function closeTicket() {
+    setShowTicket(false);
+  }
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light shadow-sm">
+      <nav className="topMenuPosition navbar navbar-expand-lg bg-light shadow-sm">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Stone24</a>
+          <a className="navbar-brand" href="#" onClick={() => closeTicket()}>Stone24</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -17,7 +28,7 @@ function TopMenu() {
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" onclick={createIncident}>Incident</a>
+                <a className="nav-link" href="#" onClick={() => createTicket()}>Incident</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Request</a>
@@ -50,7 +61,9 @@ function TopMenu() {
           </div>
         </div>
       </nav>
+      {showTicket && <CreateTicket />}
     </>
+
   );
 }
 

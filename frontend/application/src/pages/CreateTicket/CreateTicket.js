@@ -1,10 +1,12 @@
-import '../incident/Incident.css';
+import './CreateTicket.css';
+import TopMenu from '../../components/TopMenu/TopMenu.js'; 
 
-function Incident() {
+function CreateTicket() {
+
     return (
         
-        <div className="container bg-light shadow-lg form-position">
-            <h2 className='mt-2'>Create Incident</h2>
+        <div id="incidentContainer" className="container bg-light shadow-lg form-position">
+            <h2 className='mt-2 text-center'>- Create Interaction Ticket -</h2>
             <form>
 
                 <div className="form-group mt-4">
@@ -50,11 +52,20 @@ function Incident() {
                                 <option>Medium</option>
                                 <option>High</option>
                             </select>
+
+                            <label className='mt-2' for="impact">Ticket Type:</label>
+                            <select className="form-control form-control-sm" id="impact">
+                                <option>Incident</option>
+                                <option>Request</option>
+                                <option>How to</option>
+                                <option>Information only</option>
+                                <option>Status call</option>
+                                <option>Hang up</option>
+                                <option>Wrong call</option>
+                            </select>
                         </div>
 
                     </div>
-
-
 
                     <label className='mt-2' for="shortdescription">Short Description: </label>
                     <input type="text" className="form-control form-control-sm" id="shortdescription" placeholder="Short Description / building code / user contact" />
@@ -66,10 +77,11 @@ function Incident() {
                 </div>
                 <div className="form-group">
                 </div>
-                <button type="submit" className="mt-4 ml-4 btn btn-primary">Create Ticket</button>
+                <button type="submit" method='post' className="mt-4 ml-4 btn btn-primary">Create Ticket</button>
                 <button type="reset" className="mt-4 ml-4 btn btn-danger">Reset Ticket</button>
+                <button type="button" href="#" className="mt-4 ml-4 btn btn-secondary" formAction={() => TopMenu.closeTicket()}>Cancel</button>
             </form>
         </div>
     );
 
-} export default Incident;
+} export default CreateTicket;

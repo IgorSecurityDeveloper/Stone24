@@ -1,6 +1,9 @@
 .container {
+    
     padding: 30px;
     margin-top: 30px;
+    position: absolute;
+    right: 380px;
 }
 
 .form-position {

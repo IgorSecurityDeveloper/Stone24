@@ -1,9 +1,10 @@
 .sideNavBarSize {
-    width: 20% !important; 
+    width: 15% !important; 
     height: 100% !important;
     margin-left: -250px;
     transition: 1s;
-    position: absolute;
+    position: fixed !important;
+    left: 0 !important;
     z-index: 10;
 }
 

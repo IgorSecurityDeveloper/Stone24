@@ -2,7 +2,7 @@ import '../SideMenu/SideMenu.css'
 
 function SideMenu() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark flex-start sideNavBarSize">
+        <nav className="navbar shadow-lg navbar-expand-lg navbar-dark bg-dark flex-start sideNavBarSize">
             
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav flex-column">
