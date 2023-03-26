@@ -2,59 +2,79 @@ package entities;
 
 public class User {
  
-	private int UserID;
-	private String UserName;
-	private int AuthCode;
-	private String Address;
-	private Enum Language;
-	private boolean UserActive;
+	private int userID;
+	private String userName;
+	private int authCode;
+	private String address;
+	private Enum<languageOptions> language;
+	private String password;
+	private String email;
+	private String role;
+	private boolean userActive;
 	public int getUserID() {
-		return UserID;
+		return userID;
 	}
 	public void setUserID(int userID) {
-		UserID = userID;
+		this.userID = userID;
 	}
 	public String getUserName() {
-		return UserName;
+		return userName;
 	}
 	public void setUserName(String userName) {
-		UserName = userName;
+		this.userName = userName;
 	}
 	public int getAuthCode() {
-		return AuthCode;
+		return authCode;
 	}
 	public void setAuthCode(int authCode) {
-		AuthCode = authCode;
+		this.authCode = authCode;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	public Enum getLanguage() {
-		return Language;
+		return language;
 	}
 	public void setLanguage(Enum language) {
-		Language = language;
+		this.language = language;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	public boolean isUserActive() {
-		return UserActive;
+		return userActive;
 	}
 	public void setUserActive(boolean userActive) {
-		UserActive = userActive;
-	} 
-	
-	public User(int userID, String userName, int authCode, String address, Enum language, boolean userActive) {
-		UserID = userID;
-		UserName = userName;
-		AuthCode = authCode;
-		Address = address;
-		Language = language;
-		UserActive = userActive;
+		this.userActive = userActive;
 	}
 	
 	public void createTicket() {
+		
+	}
+	
+	public void login() {
+		
+	}
+	
+	public void logout() {
 		
 	}
 }
