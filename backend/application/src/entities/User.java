@@ -1,4 +1,6 @@
 package entities;
+package entities.enumerate.ContactMethod;
+
 
 public class User {
  
@@ -6,11 +8,12 @@ public class User {
 	private String userName;
 	private int authCode;
 	private String address;
-	private Enum<languageOptions> language;
+	private String language;
 	private String password;
 	private String email;
 	private String role;
 	private boolean userActive;
+	
 	public int getUserID() {
 		return userID;
 	}
@@ -35,10 +38,10 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Enum getLanguage() {
+	public String getLanguage() {
 		return language;
 	}
-	public void setLanguage(Enum language) {
+	public void setLanguage(String language) {
 		this.language = language;
 	}
 	public String getPassword() {
